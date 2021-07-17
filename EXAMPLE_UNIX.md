@@ -14,6 +14,7 @@ make
 make check
 sudo make install
 sudo ldconfig # refresh shared library cache.
+cd ..
 ```
 
 * set PKG_CONFIG_PATH ( add the directory containing `protobuf.pc' )
@@ -23,3 +24,21 @@ pkg-config --cflags protobuf         # print compiler flags
 pkg-config --libs protobuf           # print linker flags
 ```
 
+* compile .proto files
+```
+chmod a+x proto_compiler.sh
+./proto_compiler.sh
+```
+
+* compile example program
+```
+make clean 
+make
+```
+
+* run program 'write'
+```
+export 
+./write address.txt
+
+```
