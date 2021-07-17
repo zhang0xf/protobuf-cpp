@@ -40,5 +40,5 @@ make
 ```
 export LD_LIBRARY_PATH=/usr/local/lib [may need]
 ./write address.txt
-./read
+./read address.txt
 ```
