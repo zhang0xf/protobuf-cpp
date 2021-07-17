@@ -42,3 +42,11 @@ export LD_LIBRARY_PATH=/usr/local/lib [may need]
 ./write address.txt
 ./read address.txt
 ```
+
+# Reference
+
+[C++ Installation - Unix](https://github.com/protocolbuffers/protobuf/blob/master/src/README.md)
+
+[Protocol Buffer Basics: C++](https://developers.google.com/protocol-buffers/docs/cpptutorial)
+
+[Language Guide](https://developers.google.com/protocol-buffers/docs/overview)
