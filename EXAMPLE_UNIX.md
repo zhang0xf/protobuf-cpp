@@ -36,7 +36,7 @@ make clean
 make
 ```
 
-* run program 'write'
+* run program 'write' and 'read'
 ```
 export LD_LIBRARY_PATH=/usr/local/lib [may need]
 ./write address.txt
