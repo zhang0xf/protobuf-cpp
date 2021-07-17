@@ -38,7 +38,7 @@ make
 
 * run program 'write'
 ```
-export 
+export LD_LIBRARY_PATH=/usr/local/lib [may need]
 ./write address.txt
-
+./read
 ```
