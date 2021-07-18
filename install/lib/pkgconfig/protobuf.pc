@@ -1,0 +1,11 @@
+prefix=D:/Project/Learn/Protobuf/protobuf-cpp/install
+exec_prefix=D:/Project/Learn/Protobuf/protobuf-cpp/install
+libdir=D:/Project/Learn/Protobuf/protobuf-cpp/install/lib
+includedir=D:/Project/Learn/Protobuf/protobuf-cpp/install/include
+
+Name: Protocol Buffers
+Description: Google's Data Interchange Format
+Version: 3.17.3.0
+Libs: -L${libdir} -lprotobuf 
+Cflags: -I${includedir}
+Conflicts: protobuf-lite
