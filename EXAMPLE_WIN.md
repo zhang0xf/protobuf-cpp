@@ -16,3 +16,12 @@ NOTICE : the first way can not get the "include" and "lib" for our visual studio
 
 * 项目属性 -> c/c++ -> 常规 -> 附加包含目录
 ![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/Headers_Include.PNG)
+
+* 项目属性 -> 链接器 -> 常规 -> 附加库目录
+![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/Lib_Include.PNG)
+
+* 项目属性 -> 链接器 -> 输入 -> 附加依赖项
+![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/Lib_Name.PNG)
+
+* 项目属性 -> c/c++ -> 代码生成 -> 运行库[optional]
+![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/Compiler_Error_Solution.PNG)
