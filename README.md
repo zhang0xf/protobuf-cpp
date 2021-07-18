@@ -16,4 +16,4 @@ WIN Example Guide : [WIN Example Guide](https://github.com/zhang0xf/protobuf-cpp
 * see also [protobuf-csharp demo]() for unity.
 * I apply it to [battle-city](https://github.com/zhang0xf/battle-city) for game save point.
 * I apply it to [somewhere demo]() for network data.
-* I apply it to [ryzom-server](https://github.com/zhang0xf/ryzom-server).
+* I apply it to [ryzom-server](https://github.com/zhang0xf/ryzom-server) for c/s communication.
