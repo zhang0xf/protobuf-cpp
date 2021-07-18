@@ -30,3 +30,6 @@ if not, may has error：`error LNK2038: 检测到“RuntimeLibrary”的不匹�
 * 项目属性 -> 调试 -> 命令参数
 ![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/ArgsSetting_For_Main.PNG)
 
+## Reference
+
+[Cmake.md](https://github.com/protocolbuffers/protobuf/blob/master/cmake/README.md)
