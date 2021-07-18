@@ -25,3 +25,8 @@ NOTICE : the first way can not get the "include" and "lib" for our visual studio
 
 * 项目属性 -> c/c++ -> 代码生成 -> 运行库[optional]
 ![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/Compiler_Error_Solution.PNG)
+if not, may has error：`error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MTd_StaticDebug”不匹配值“MDd_DynamicDebug”(addressbook.pb.obj 中)`
+
+* 项目属性 -> 调试 -> 命令参数
+![image_text](https://github.com/zhang0xf/protobuf-cpp/blob/main/image/ArgsSetting_For_Main.PNG)
+
