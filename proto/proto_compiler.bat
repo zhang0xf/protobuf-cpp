@@ -1,7 +1,7 @@
 ::need protoc.exe
 
 ::设置目录
-set PROTO_DIR=./protofile
+set PROTO_DIR=./proto
 set CPP_OUT=../src
 
 ::编译.proto文件

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置目录
-PROTO_DIR=./protofile
+PROTO_DIR=./proto
 CPP_OUT=../src
 
 # 编译.proto文件
