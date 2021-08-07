@@ -14,6 +14,6 @@ WIN Example Guide : [WIN Example Guide](https://github.com/zhang0xf/protobuf-cpp
 
 ## Notice
 
-* both Unix and WIN, I got some error in "make check", but can still install successfully and the program runs normally . Due to level priority, i don't know why?
 * the application is console application.
+* both Unix and WIN got errors when "make check", but still can install and program runs successfully.I don't know why.
 * see also [protobuf-unity](https://github.com/zhang0xf/protobuf-unity)
