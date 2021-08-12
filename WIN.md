@@ -17,7 +17,7 @@ NOTICE : the first way can not get the "include" and "lib" for our visual studio
 * 项目属性 -> c/c++ -> 常规 -> 附加包含目录
 * 项目属性 -> 链接器 -> 常规 -> 附加库目录
 * 项目属性 -> 链接器 -> 输入 -> 附加依赖项
-* 项目属性 -> c/c++ -> 代码生成 -> 运行库[optional] : `error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MTd_StaticDebug”不匹配值“MDd_DynamicDebug”(addressbook.pb.obj 中)`
+* 项目属性 -> c/c++ -> 代码生成 -> 运行库【 Optional 】 : `error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MTd_StaticDebug”不匹配值“MDd_DynamicDebug”(addressbook.pb.obj 中)`
 * 项目属性 -> 调试 -> 命令参数
 
 ## Reference
