@@ -15,5 +15,5 @@ WIN Example Guide : [WIN Example Guide](https://github.com/zhang0xf/protobuf-cpp
 ## Notice
 
 * the application is console application.
-* both Unix and WIN got errors when "make check", but still can install and program runs successfully.I don't know why.
+* both Unix and WIN got errors when `make check`, but install and runs successfully.
 * see also [protobuf-unity](https://github.com/zhang0xf/protobuf-unity)
