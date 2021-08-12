@@ -24,6 +24,6 @@ NOTICE : the first way can not get the "include" and "lib" for our visual studio
 
 [Cmake.md](https://github.com/protocolbuffers/protobuf/blob/master/cmake/README.md)
 
-## protobuf with cmake
+## Protobuf with cmake
 
 [using cmake generate visual studio project with protobuf](https://github.com/zhang0xf/ryzom-server)
