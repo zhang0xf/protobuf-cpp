@@ -1,9 +1,9 @@
 # 指定编译器选项
 CXX = g++
 WORK_DIR = .
-C_FLAG = $(shell pkg-config --cflags protobuf) -Wall -g -std=c++11
+C_FLAG = -Wall -g -std=c++11 $(shell pkg-config --cflags protobuf)
 LIBS = $(shell pkg-config --libs protobuf)
-SRC_DIR = $(WORK_DIR)/src
+SRC_DIR = $(WORK_DIR)/code
 
 # 构建多个目标
 ALL:read write
