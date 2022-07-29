@@ -1,19 +1,33 @@
-# 指定编译器选项
 CXX = g++
-WORK_DIR = .
-C_FLAG = -Wall -g -std=c++11 $(shell pkg-config --cflags protobuf)
-LIBS = $(shell pkg-config --libs protobuf)
-SRC_DIR = $(WORK_DIR)/code
 
-# 构建多个目标
-ALL:read write
+WORKDIR = .
 
-read : $(SRC_DIR)/read_message.cpp $(SRC_DIR)/addressbook.pb.cc
-	$(CXX) $(C_FLAG) $^ -o $@ $(LIBS) 
+SRCS_DIR = $(WORKDIR)/src
+PROTOS_DIR = $(WORKDIR)/proto
+PB_DIR = $(WORKDIR)/protobuf
+PB_SRCS = $(wildcard $(PB_DIR)/*.cc)
+PB_NODIR_SRCS = $(notdir $(PB_SRCS))
+CFLAGS = -Wall -g -std=c++11
+CFLAGS_X = -Wall -Wextra -Werror -g -std=c++11
 
-write : $(SRC_DIR)/write_message.cpp $(SRC_DIR)/addressbook.pb.cc
-	$(CXX) $(C_FLAG) $^ -o $@ $(LIBS)
+# protobuf need linking runtime libs, tool 'pkg-config' can tell the config.
+export PROTOBUF_CONFIG = $(shell pkg-config --cflags --libs protobuf)
+
+default: all
+
+all: pb read write
+	@echo "-- build finished"
+
+generate_protobuf pb:
+	@protoc -I=$(PROTOS_DIR) --cpp_out=$(PB_DIR) $(PROTOS_DIR)/addressbook.proto
+	@echo "-- build protobuf"
+
+read: $(SRCS_DIR)/read_message.cpp $(PB_SRCS)
+	$(CXX) $(PROTOBUF_CONFIG) $(CFLAGS) $^ -o $@
+
+write: $(SRCS_DIR)/write_message.cpp $(PB_SRCS)
+	$(CXX) $(PROTOBUF_CONFIG) $(CFLAGS) $^ -o $@
 
 .PHONY:clean
 clean:
-	rm read write
+	
