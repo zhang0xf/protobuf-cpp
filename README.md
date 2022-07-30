@@ -10,10 +10,6 @@ protobuf-cpp-3.17.3 -> protobuf-cpp-3.21.4
 
 * install protobuf : [build protobuf from source](https://github.com/protocolbuffers/protobuf/blob/main/src/README.md)
 * install pkg-config : `brew install pkg-config`
-
-
-## Other
-
 * about pkg-config : [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
 
 ## WIN
@@ -23,11 +19,6 @@ protobuf-cpp-3.17.3 -> protobuf-cpp-3.21.4
 ## make
 
 `make`
-
-## run 
-
-* `./read ./data/address.txt`
-* `./write ./data/address.txt`
 
 ## vscode
 
